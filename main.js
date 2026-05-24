@@ -52,8 +52,8 @@ const translations = {
 let currentLang = "en";
 
 function setLanguage(lang) {
-    langToggleBtn.textContent = currentLang === "es" ? "EN" : "ES";
-    
+    langToggleBtn.textContent = currentLang === "en" ? "ES" : "EN";
+
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((element) => {
         const key = element.getAttribute("data-i18n");
@@ -64,7 +64,7 @@ function setLanguage(lang) {
 }
 
 langToggleBtn.addEventListener("click", () => {
-    currentLang = currentLang === "es" ? "en" : "es";
+    currentLang = currentLang === "en" ? "es" : "en";
     setLanguage(currentLang);
 });
 
