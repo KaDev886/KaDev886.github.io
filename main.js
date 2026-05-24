@@ -1,22 +1,70 @@
 const langToggleBtn = document.getElementById("lang-toggle");
-const esElements = document.querySelectorAll(".lang-es");
-const enElements = document.querySelectorAll(".lang-en");
 const themeToggleBtn = document.getElementById("theme-toggle");
 const htmlElement = document.documentElement;
 
+const translations = {
+    es: {
+        "header-status": "Disponible para proyectos y herramientas",
+        "hero-title": "Hola, soy un desarrollador enfocado en ",
+        "hero-highlight": "lógica y optimización",
+        "hero-desc":
+            "Me dedico a escribir código estructurado, crear librerías utilitarias y resolver problemas complejos de rendimiento. Prefiero que mi trabajo hable a través de repositorios limpios y soluciones reales.",
+        "specs-section-title": "// Especialidades técnicas",
+        "spec1-title": "Arquitectura y Herramientas",
+        "spec1-desc":
+            "Creación de sistemas modulares, utilidades de tipado estático y librerías de validación de datos pensadas para la estabilidad del entorno.",
+        "spec2-title": "Optimización de Código",
+        "spec2-desc":
+            "Refactorización y limpieza de algoritmos, reducción de pasadas redundantes y manejo estricto de estados para maximizar la velocidad de ejecución.",
+        "projects-section-title": "// Código y Proyectos",
+        "project1-title": "Librería de Validación de Datos / Schemas",
+        "project1-tag": "Código Abierto",
+        "project1-desc":
+            "Diseño e implementación de una solución ligera en Luau para la validación y coerción de tipos de datos. Prioriza la reparación de datos corrompidos en lugar de fallar silenciosamente.",
+        "project1-tech": "Estructura de Datos",
+        "footer-text": "Hecho con código limpio, sin rodeos.",
+        "footer-contact": "Contacto",
+    },
+    en: {
+        "header-status": "Available for projects & tools",
+        "hero-title": "Hi, I am a developer focused on ",
+        "hero-highlight": "logic & optimization",
+        "hero-desc":
+            "I specialize in writing structured code, creating utility libraries, and solving complex performance issues. I prefer to let my work speak through clean repositories and real solutions.",
+        "specs-section-title": "// Technical Specialties",
+        "spec1-title": "Architecture & Tools",
+        "spec1-desc":
+            "Developing modular systems, static typing utilities, and data validation libraries designed for environment stability.",
+        "spec2-title": "Code Optimization",
+        "spec2-desc":
+            "Refactoring and optimizing algorithms, reducing redundant iterations, and strict state management to maximize execution speed.",
+        "projects-section-title": "// Code & Projects",
+        "project1-title": "Data Validation / Schema Library",
+        "project1-tag": "Open Source",
+        "project1-desc":
+            "Design and implementation of a lightweight Luau solution for data type validation and coercion. Focuses on repairing corrupted data instead of failing silently.",
+        "project1-tech": "Data Structures",
+        "footer-text": "Built with clean code, no fluff.",
+        "footer-contact": "Contact",
+    },
+};
+
 let currentLang = "es";
+
+function setLanguage(lang) {
+    const elements = document.querySelectorAll("[data-i18n]");
+    elements.forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+}
 
 langToggleBtn.addEventListener("click", () => {
     currentLang = currentLang === "es" ? "en" : "es";
     langToggleBtn.textContent = currentLang === "es" ? "EN" : "ES";
-
-    if (currentLang === "es") {
-        esElements.forEach((el) => el.classList.remove("hidden"));
-        enElements.forEach((el) => el.classList.add("hidden"));
-    } else {
-        esElements.forEach((el) => el.classList.add("hidden"));
-        enElements.forEach((el) => el.classList.remove("hidden"));
-    }
+    setLanguage(currentLang);
 });
 
 themeToggleBtn.addEventListener("click", () => {
@@ -32,3 +80,5 @@ themeToggleBtn.addEventListener("click", () => {
 if (localStorage.getItem("theme") === "light") {
     htmlElement.classList.remove("dark");
 }
+
+setLanguage(currentLang);
