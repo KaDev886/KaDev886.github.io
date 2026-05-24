@@ -52,8 +52,8 @@ const translations = {
 let currentLang = "en";
 
 function setLanguage(lang) {
-    langToggleBtn.textContent = currentLang === "en" ? "ES" : "EN";
-
+    langToggleBtn.textContent = lang === "en" ? "ES" : "EN";
+    
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((element) => {
         const key = element.getAttribute("data-i18n");
