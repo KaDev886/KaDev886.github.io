@@ -12,15 +12,10 @@
 </head>
 
 <body class="bg-[#f9f8fc] text-slate-800 dark:bg-[#07050a] dark:text-slate-200 min-h-screen transition-colors duration-300 selection:bg-orange-500/30">
-    
+
     <div class="fixed top-6 right-6 flex items-center space-x-3 z-50 bg-white/80 dark:bg-[#07050a]/80 p-2 rounded-full border border-purple-200 dark:border-purple-950/40 backdrop-blur-sm shadow-sm shadow-purple-500/5">
-
-        <button id="lang-toggle" class="code-font text-xs font-bold px-3 py-1.5 rounded-full hover:bg-purple-100 dark:hover:bg-purple-950/40 transition-colors text-purple-600 dark:text-purple-400">
-            EN
-        </button>
-
+        <button id="lang-toggle" class="code-font text-xs font-bold px-3 py-1.5 rounded-full hover:bg-purple-100 dark:hover:bg-purple-950/40 transition-colors text-purple-600 dark:text-purple-400">EN</button>
         <span class="h-4 w-[1px] bg-purple-200 dark:bg-purple-950/40"></span>
-
         <button id="theme-toggle" class="p-1.5 rounded-full hover:bg-purple-100 dark:hover:bg-purple-950/40 transition-colors text-slate-600 dark:text-amber-400">
             <svg id="sun-icon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"></path></svg>
             <svg id="moon-icon" class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9 9 0 1020.354 15.354z"></path></svg>
@@ -32,99 +27,98 @@
         <header class="fade-in mb-16" style="animation-delay: 0.1s;">
             <div class="flex items-center space-x-3 mb-4">
                 <span class="h-2 w-2 rounded-full bg-orange-500 animate-pulse"></span>
-                <span class="code-font text-xs text-purple-400 tracking-wider uppercase font-semibold">Disponible para proyectos y herramientas</span>
+                <span class="lang-es code-font text-xs text-purple-600 dark:text-purple-400 tracking-wider uppercase font-semibold">Disponible para proyectos y herramientas</span>
+                <span class="lang-en hidden code-font text-xs text-purple-600 dark:text-purple-400 tracking-wider uppercase font-semibold">Available for projects & tools</span>
             </div>
-            <h1 class="text-4xl font-bold text-white tracking-tight sm:text-5xl mb-4">
-                Hola, soy un desarrollador enfocado en <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-fuchsia-400 to-purple-500">lógica y optimización</span>.
+            <h1 class="text-4xl font-bold text-slate-900 dark:text-white tracking-tight sm:text-5xl mb-4">
+                <span class="lang-es">Hola, soy un desarrollador enfocado en</span>
+                <span class="lang-en hidden">Hi, I am a developer focused on</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-fuchsia-500 to-purple-600 dark:from-orange-400 dark:via-fuchsia-400 dark:to-purple-500">lógica y optimización</span>.
             </h1>
-            <p class="text-slate-400 text-lg leading-relaxed max-w-2xl">
-                Me dedico a escribir código estructurado, crear librerías utilitarias y resolver problemas complejos de rendimiento. Prefiero que mi trabajo hable a través de repositorios limpios y soluciones reales.
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-2xl">
+                <span class="lang-es">Me dedico a escribir código estructurado, crear librerías utilitarias y resolver problemas complejos de rendimiento. Prefiero que mi trabajo hable a través de repositorios limpios y soluciones reales.</span>
+                <span class="lang-en hidden">I specialize in writing structured code, creating utility libraries, and solving complex performance issues. I prefer to let my work speak through clean repositories and real solutions.</span>
             </p>
         </header>
 
-        <hr class="border-purple-950/40 my-12">
+        <hr class="border-purple-200 dark:border-purple-950/40 my-12">
 
         <section class="fade-in mb-20" style="animation-delay: 0.2s;">
-            <h2 class="code-font text-xs uppercase tracking-widest text-orange-400 font-bold mb-8">// Especialidades técnicas</h2>
+            <h2 class="code-font text-xs uppercase tracking-widest text-orange-600 dark:text-orange-400 font-bold mb-8">
+                <span class="lang-es">// Especialidades técnicas</span>
+                <span class="lang-en hidden">// Technical Specialties</span>
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div class="p-6 rounded-xl bg-purple-950/10 border border-purple-900/20 hover:border-orange-500/40 transition-all duration-300 backdrop-blur-sm">
-                    <h3 class="text-white font-semibold mb-2 flex items-center">
-                        <span class="code-font text-orange-400 mr-2">&lt;/&gt;</span> Arquitectura y Herramientas
+                <div class="p-6 rounded-xl bg-purple-50/50 dark:bg-purple-950/10 border border-purple-100 dark:border-purple-900/20 hover:border-orange-500/40 transition-all duration-300 backdrop-blur-sm">
+                    <h3 class="text-slate-900 dark:text-white font-semibold mb-2 flex items-center">
+                        <span class="code-font text-orange-500 dark:text-orange-400 mr-2">&lt;/&gt;</span>
+                        <span class="lang-es">Arquitectura y Herramientas</span>
+                        <span class="lang-en hidden">Architecture & Tools</span>
                     </h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Creación de sistemas modulares, utilidades de tipado estático y librerías de validación de datos pensadas para la estabilidad del entorno.
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        <span class="lang-es">Creación de sistemas modulares, utilidades de tipado estático y librerías de validación de datos pensadas para la estabilidad del entorno.</span>
+                        <span class="lang-en hidden">Developing modular systems, static typing utilities, and data validation libraries designed for environment stability.</span>
                     </p>
                 </div>
-
-                <div class="p-6 rounded-xl bg-purple-950/10 border border-purple-900/20 hover:border-purple-500/40 transition-all duration-300 backdrop-blur-sm">
-                    <h3 class="text-white font-semibold mb-2 flex items-center">
-                        <span class="code-font text-purple-400 mr-2">#</span> Optimización de Código
+                <div class="p-6 rounded-xl bg-purple-50/50 dark:bg-purple-950/10 border border-purple-100 dark:border-purple-900/20 hover:border-purple-500/40 transition-all duration-300 backdrop-blur-sm">
+                    <h3 class="text-slate-900 dark:text-white font-semibold mb-2 flex items-center">
+                        <span class="code-font text-purple-600 dark:text-purple-400 mr-2">#</span>
+                        <span class="lang-es">Optimización de Código</span>
+                        <span class="lang-en hidden">Code Optimization</span>
                     </h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Refactorización y limpieza de algoritmos, reducción de pasadas redundantes y manejo estricto de estados para maximizar la velocidad de ejecución.
+                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        <span class="lang-es">Refactorización y limpieza de algoritmos, reducción de pasadas redundantes y manejo estricto de estados para maximizar la velocidad de ejecución.</span>
+                        <span class="lang-en hidden">Refactoring and optimizing algorithms, reducing redundant iterations, and strict state management to maximize execution speed.</span>
                     </p>
                 </div>
-
             </div>
         </section>
 
         <section class="fade-in mb-16" style="animation-delay: 0.3s;">
-            <h2 class="code-font text-xs uppercase tracking-widest text-orange-400 font-bold mb-8">// Código y Proyectos</h2>
+            <h2 class="code-font text-xs uppercase tracking-widest text-orange-600 dark:text-orange-400 font-bold mb-8">
+                <span class="lang-es">// Código y Proyectos</span>
+                <span class="lang-en hidden">// Code & Projects</span>
+            </h2>
             <div class="space-y-6">
-
-                <div class="group p-6 rounded-xl bg-purple-950/5 border border-purple-900/10 hover:bg-purple-950/10 hover:border-purple-900/30 transition-all duration-300">
+                <div class="group p-6 rounded-xl bg-purple-50/30 dark:bg-purple-950/5 border border-purple-100 dark:border-purple-900/10 hover:bg-purple-100/40 dark:hover:bg-purple-950/10 hover:border-purple-200 dark:hover:border-purple-900/30 transition-all duration-300">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-semibold text-white group-hover:text-orange-400 transition-colors">
-                            Librería de Validación de Datos / Schemas
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white group-hover:text-orange-500 dark:group-hover:text-orange-400 transition-colors">
+                            <span class="lang-es">Librería de Validación de Datos / Schemas</span>
+                            <span class="lang-en hidden">Data Validation / Schema Library</span>
                         </h3>
-
-                        <span class="code-font text-xs px-2 py-1 bg-orange-500/10 text-orange-400 rounded border border-orange-500/20">Código Abierto</span>
+                        <span class="code-font text-xs px-2 py-1 bg-orange-500/10 text-orange-600 dark:text-orange-400 rounded border border-orange-500/20">
+                            <span class="lang-es">Código Abierto</span>
+                            <span class="lang-en hidden">Open Source</span>
+                        </span>
                     </div>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                        Diseño e implementación de una solución ligera en Luau para la validación y coerción de tipos de datos. Prioriza la reparación de datos corrompidos en lugar de fallar silenciosamente.
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+                        <span class="lang-es">Diseño e implementación de una solución ligera en Luau para la validación y coerción de tipos de datos. Prioriza la reparación de datos corrompidos en lugar de fallar silenciosamente.</span>
+                        <span class="lang-en hidden">Design and implementation of a lightweight Luau solution for data type validation and coercion. Focuses on repairing corrupted data instead of failing silently.</span>
                     </p>
-                    <div class="flex space-x-3 text-xs code-font text-slate-500">
+                    <div class="flex space-x-3 text-xs code-font text-slate-400 dark:text-slate-500">
                         <span>Luau / Lua</span>
                         <span>•</span>
-                        <span>Estructura de Datos</span>
+                        <span class="lang-es">Estructura de Datos</span>
+                        <span class="lang-en hidden">Data Structures</span>
                     </div>
                 </div>
-
-                <div class="group p-6 rounded-xl bg-purple-950/5 border border-purple-900/10 hover:bg-purple-950/10 hover:border-purple-900/30 transition-all duration-300">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-lg font-semibold text-white group-hover:text-purple-400 transition-colors">
-                            Infraestructura de Backend para Experiencia Multijugador
-                        </h3>
-
-                        <span class="code-font text-xs px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20">En Pausa</span>
-                    </div>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">
-                        Desarrollo integral de sistemas centrales (manejo de inventario, guardado de estado resiliente y optimización de vectores). El proyecto técnico se completó con éxito, aunque la administración externa pausó el despliegue comercial.
-                    </p>
-                    <div class="flex space-x-3 text-xs code-font text-slate-500">
-                        <span>Roblox Studio</span>
-                        <span>•</span>
-                        <span>DataStore</span>
-                        <span>•</span>
-                        <span>Sistemas Modulares</span>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <footer class="fade-in pt-8 border-t border-purple-950/40 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-500 code-font" style="animation-delay: 0.4s;">
-            <p>Hecho con código limpio, sin rodeos.</p>
+        <footer class="fade-in pt-8 border-t border-purple-200 dark:border-purple-950/40 flex flex-col sm:flex-row justify-between items-center text-sm text-slate-400 dark:text-slate-500 code-font" style="animation-delay: 0.4s;">
+            <p>
+                <span class="lang-es">Hecho con código limpio, sin rodeos.</span>
+                <span class="lang-en hidden">Built with clean code, no fluff.</span>
+            </p>
             <div class="flex space-x-6 mt-4 sm:mt-0">
-                <a href="#" class="hover:text-orange-400 transition-colors">GitHub</a>
-                <a href="#" class="hover:text-purple-400 transition-colors">Contacto</a>
+                <a href="#" class="hover:text-orange-500 dark:hover:text-orange-400 transition-colors">GitHub</a>
+                <a href="#" class="hover:text-purple-600 dark:hover:text-purple-400 transition-colors">Contacto / Contact</a>
             </div>
         </footer>
 
     </main>
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
 </body>
 </html>
