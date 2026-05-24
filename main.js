@@ -49,11 +49,11 @@ const translations = {
     },
 };
 
-let currentLang = "en";
+let currentLang = localStorage.getItem("lang") || "en";
 
 function setLanguage(lang) {
     langToggleBtn.textContent = lang === "en" ? "ES" : "EN";
-    
+
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((element) => {
         const key = element.getAttribute("data-i18n");
@@ -61,6 +61,8 @@ function setLanguage(lang) {
             element.textContent = translations[lang][key];
         }
     });
+
+    localStorage.setItem("lang", lang);
 }
 
 langToggleBtn.addEventListener("click", () => {
