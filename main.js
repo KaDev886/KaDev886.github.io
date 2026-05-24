@@ -8,7 +8,7 @@ const translations = {
         "hero-title": "Hola, soy un desarrollador enfocado en ",
         "hero-highlight": "lógica y optimización",
         "hero-desc":
-            "Me dedico a escribir código estructurado, crear librerías utilitarias y resolver problemas complejos de rendimiento. Prefiero que mi trabajo hable a través de repositorios limpios y soluciones reales.",
+            "Me especializo en construir herramientas modulares, optimizar algoritmos y diseñar sistemas de tipado estricto. Me enfoco en crear soluciones eficientes donde el rendimiento y la estabilidad del código sean lo primero.",
         "specs-section-title": "// Especialidades técnicas",
         "spec1-title": "Arquitectura y Herramientas",
         "spec1-desc":
@@ -30,7 +30,7 @@ const translations = {
         "hero-title": "Hi, I am a developer focused on ",
         "hero-highlight": "logic & optimization",
         "hero-desc":
-            "I specialize in writing structured code, creating utility libraries, and solving complex performance issues. I prefer to let my work speak through clean repositories and real solutions.",
+            "I specialize in building modular tools, optimizing algorithms, and designing strict typing systems. My focus is on creating efficient solutions where code performance and stability come first.",
         "specs-section-title": "// Technical Specialties",
         "spec1-title": "Architecture & Tools",
         "spec1-desc":
@@ -49,7 +49,7 @@ const translations = {
     },
 };
 
-let currentLang = "es";
+let currentLang = "en";
 
 function setLanguage(lang) {
     const elements = document.querySelectorAll("[data-i18n]");
